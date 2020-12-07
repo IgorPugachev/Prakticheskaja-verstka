@@ -80,12 +80,21 @@ a {
     align-items: center;
 }
 
+.font-white {
+    color: #FFFFFF;
+}
+
+.font-pink {
+    color: #F16D7F;
+}
+
 .catalog__img {
     width: 100%;
 }
 
 .catalog-big {
     margin-top: 30px;
+    position: relative;
 }
 
 .catalog-big__img {
@@ -114,7 +123,7 @@ text-align: center;
 
 .featured-content {
     margin-top: 48px;
-    margin-bottom: 48px;
+    margin-bottom: 63px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -132,11 +141,126 @@ text-align: center;
 }
 
 .featured-heading {
-    font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     color: #000000;
+    margin-top: 25px;
+    margin-bottom: 13px;
+    margin-left: 18px;
+}
+
+.featured-text {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-bottom: 18px;
+    margin-left: 18px;
+    margin-right: 28px;
+}
+
+.featured-pricetag {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    margin-left: 18px;
+    margin-bottom: 20px;
+}
+
+.button-style {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 14px 38px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+}
+
+div a.button-style {
+    margin-left: calc(50% - 100px);
+    margin-right: calc(50% - 100px);
+}
+
+.lower_part {
+    background-color: #222; /* В оригинале это цвет #222224 */
+    height: 341px;
+    margin-top: 109px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lower_part-item {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lower_part-heading {
+    font-size: 20px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+
+.lower_part-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.before_footer {
+    height: 448px;
+    background-image: url("img/semi-opacity.png"), url("img/Surfing.png");
+    background-repeat: no-repeat;
+    background-size: auto 448px;
+    
+}
+
+.footer {
+    background-color: #222;
+    height: 79px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright {
+    width: 332px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row no-wrap;
+}
+
+.social_button_white {
+    background: #fff;
+    width: 32px;
+    height: 32px;
+    border: 0px;
+}
+
+.social_button_pink {
+    background: #F16D7F;
+    width: 32px;
+    height: 32px;
+    border: 0px;
+    margin-right: 8px;
+}
+
+.social_button_white:not(:last-child) {
+    margin-right: 8px;
 }
 
 
+/* background: url("img/Surfing.png");
+    background-color:rgba(244, 244, 244, 0.7);
+    background-repeat: no-repeat;
+    url(img/semi-opacity.png") */
