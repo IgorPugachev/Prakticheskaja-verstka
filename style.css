@@ -219,7 +219,88 @@ div a.button-style {
     background-image: url("img/semi-opacity.png"), url("img/Surfing.png");
     background-repeat: no-repeat;
     background-size: auto 448px;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     
+}
+
+.before_footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 87px;
+    width: 360px;
+}
+
+.round_photo {
+    margin-bottom: 30px;
+}
+
+.lato-18px {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #222224;
+}
+
+.lato-20px {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.lato-24px {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #222224;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.before_footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 155px;
+    width: 352px;
+    height: 137px;
+}
+
+.form_block {
+    margin-top: 32px;
+    display: flex;
+
+}
+
+.email_field {
+    height: 50px;
+    background: #E1E1E1;
+    padding-left: 22px;
+    width: 256px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.subscribe_field {
+    background: #F16D7F;
+    width: 100px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
 }
 
 .footer {
