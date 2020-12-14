@@ -31,7 +31,7 @@ a {
     margin-right: 34px;
 }
 
-.breadcrumb_block {
+.info_block {
     height: 148px;
     background: #F8F3F4;
     display: flex;
@@ -234,12 +234,16 @@ text-align: center;
 }
 
 .lato-14-center {
-font-family: Lato;
 font-weight: 400;
 font-size: 14px;
 line-height: 17px;
 color: #9F9F9F;
 text-align: center;
+}
+
+.lato-14px {
+font-size: 14px;
+line-height: 17px;
 }
 
 .featured-content {
@@ -367,7 +371,7 @@ div a.button-style {
     background-image: url("img/semi-opacity.png"), url("img/Surfing.png");
     background-repeat: no-repeat;
     background-size: auto 448px;
-    background-position: center;
+    background-position: center bottom;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -507,8 +511,50 @@ div a.button-style {
     margin-right: 8px;
 }
 
+/* Здесь будут стили для Catalogue */
 
-/* background: url("img/Surfing.png");
-    background-color:rgba(244, 244, 244, 0.7);
-    background-repeat: no-repeat;
-    url(img/semi-opacity.png") */
+.site-info_link:last-child {
+font-weight: bold;
+color: #F16D7F;
+}
+
+.site-info_link:not(:last-child)::after {
+    content:"/";
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.site-info_link:hover {
+    color:#F16D7F;
+}
+
+.breadcrumbs_nav {
+    display: flex;
+}
+
+.sort {
+    padding-top: 51px;
+    padding-bottom: 18px;
+    display: flex;
+}
+
+.sort_filter {
+    flex-basis: 34%;
+    flex-grow: 1;
+}
+
+.sort_param {
+    flex-basis: 66%;
+    flex-grow: 2;
+}
+
+.sort_filter_active {
+    width: 360px;
+    background: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 16px;
+}
+
+.sort_ul {
+    list-style-type: none;
+}
