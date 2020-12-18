@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogue</title>
+    <title>Product</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -49,128 +49,54 @@
     -->
     </div>
 
-    <div class="sort center">
-        <div class="sort_filter sort_filter_active">
-            <span class="sort_text lato-14px">FILTER <svg width="15" height="10" viewBox="0 0 15 10" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
-                        fill="black" />
-            </span>
-            <div class="sort_items">
-                <details open>
-                    <summary> CATEGORY</summary>
-                    <ul class="sort_ul">
-
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Bags</a></li>
-                        <li><a href="#">Denim</a></li>
-                        <li><a href="#">Hoodies & Sweatshirts</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">Shirts</a></li>
-                        <li><a href="#">Shoes</a></li>
-                        <li><a href="#">Sweaters & Knits</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Tanks</a></li>
-                    </ul>
-                </details>
-                <details>
-                    <summary> BRAND</summary>
-
-                </details>
-                <details>
-                    <summary> DESIGNER</summary>
-
-                </details>
-            </div>
+    <div class="big_picture_block">
+        <div class="arrow_block">
+            <img src="img/arrow_left.svg" alt="">
         </div>
-        <div class="sort_param">
-            <span>TRENDING NOW <img src="img/arrow_down.svg" alt=""></span>
-            <span>SIZE <img src="img/arrow_down.svg" alt=""></span>
-            <span>PRICE <img src="img/arrow_down.svg" alt=""></span>
+        <img src="img/big_picture.png" alt="big picture">
+        <div class="arrow_block">
+            <img src="img/arrow_right.svg" alt="">
         </div>
+
     </div>
 
-    <!-- My unsuccessful attempt to create this part
+    <div class="product_block">
+        <div class="product_short_name lato-14px color_F16D7F">
+            WOMEN COLLECTION
+        </div>
+        <img src="img/red_short_line.svg" alt="">
+        <div class="product_title lato-18px">
+            MOSCHINO CHEAP AND CHIC
+        </div>
+        <div class="product_description lato-14px">
+            Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
+            collaborative
+            architectures before cutting-edge services. Completely visualize parallel core competencies rather than
+            exceptional
+            portals.
+        </div>
+        <div class="pricetag">
+            $561
+        </div>
+        <div class="greyline"> <img src="img/greyline.svg" alt=""></div>
 
-        <div class="catalog_heading center">
-        <div class="catalog_head_block">
-            <details class="details_block">
-                
-                <summary class="filter_list">FILTER</summary>
-                <div class="filter_block">
-                    <div class="category_block">
-                        <p class="category_text color_EF5B70">CATEGORY</p>
-                    </div>
-                    <ul class="filter_list_ul">
-                        <li class="filter_item">Accessories</li>
-                        <li class="filter_item">Bags</li>
-                        <li class="filter_item">Denim</li>
-                        <li class="filter_item">Hoodies & Sweatshirts</li>
-                        <li class="filter_item">Jackets & Coats</li>
-                        <li class="filter_item">Polos</li>
-                        <li class="filter_item">Shirts</li>
-                        <li class="filter_item">Shoes</li>
-                        <li class="filter_item">Sweaters & Knits</li>
-                        <li class="filter_item">T-Shirts</li>
-                        <li class="filter_item">Tanks</li>
-
-                    </ul>
-
-                    
-                    <div class="brand_block">
-                        <p class="category_text color_EF5B70">BRAND</p>
-                    </div>
-                    <div class="designer_block">
-                        <p class="category_text color_EF5B70">DESIGNER</p>
-                    </div>
-
-                </div>
-
-
-
-            </details>
+        <div class="select_param lato-14px">
+            <span> CHOOZE COLOUR <img src="img/arrow_down.svg" alt=""></span>
+            <span> CHOOZE SIZE <img src="img/arrow_down.svg" alt=""></span>
+            <span> QUANTITY <img src="img/arrow_down.svg" alt=""></span>
         </div>
 
-        <div class="details_block">
-            <details>
-                <summary>TRENDING NOW</summary>
-                <p class="trending_text">Some text.</p>
-            </details>
-            <details>
-                <summary>SIZE</summary>
-                <ul>
-                    <li class="size_item lato-14px">XS</li>
-                    <li class="size_item lato-14px">S</li>
-                    <li class="size_item lato-14px">M</li>
-                    <li class="size_item lato-14px">L</li>
-                </ul>
-            </details>
-            <details>
-                <summary>PRICE</summary>
-                <p class="price_text">Some $$$.</p>
-            </details>
+        <div class="add_to_cart">
+            <img src="img/cart_red.svg" alt="">
+            <div class="lato-16px">
+                Add to Cart
+            </div>
         </div>
 
-    </div> -->
-
+    </div>
     <div class="featured-content center">
         <div class="featured-item">
-            <img src="img/featured.png" alt="">
-            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            <p class="featured-text">
-                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-                up
-                with Moda
-                Operandi.
-            </p>
-            <p class="featured-pricetag">
-                $52.00
-            </p>
-        </div>
-        <div class="featured-item">
-            <img src="img/men_picture1.png" alt="">
+            <img src="img/featured-4.png" alt="">
             <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
@@ -196,124 +122,35 @@
             </p>
         </div>
         <div class="featured-item">
-            <img src="img/featured-4.png" alt="">
-            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            <p class="featured-text">
-                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-                up
-                with Moda
-                Operandi.
-            </p>
-            <p class="featured-pricetag">
-                $52.00
-            </p>
-        </div>
-        <div class="featured-item">
-            <img src="img/men_picture2.png" alt="">
-            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            <p class="featured-text">
-                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-                up
-                with Moda
-                Operandi.
-            </p>
-            <p class="featured-pricetag">
-                $52.00
-            </p>
-        </div>
-        <div class="featured-item">
-            <img src="img/men_picture3.png" alt="">
-            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            <p class="featured-text">
-                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-                up
-                with Moda
-                Operandi.
-            </p>
-            <p class="featured-pricetag">
-                $52.00
-            </p>
-        </div>
-        <div class="featured-item">
-            <img src="img/men_picture4.png" alt="">
-            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            <p class="featured-text">
-                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-                up
-                with Moda
-                Operandi.
-            </p>
-            <p class="featured-pricetag">
-                $52.00
-            </p>
-        </div>
-        <div class="featured-item">
-            <img src="img/men_picture5.png" alt="">
-            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            <p class="featured-text">
-                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-                up
-                with Moda
-                Operandi.
-            </p>
-            <p class="featured-pricetag">
-                $52.00
-            </p>
-        </div>
-        <div class="featured-item">
-            <img src="img/men_picture6.png" alt="">
-            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            <p class="featured-text">
-                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-                up
-                with Moda
-                Operandi.
-            </p>
-            <p class="featured-pricetag">
-                $52.00
-            </p>
-        </div>
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" width="644" height="362"
+                    src="https://www.youtube.com/embed/hDxRHwe-c9A" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
 
-    </div>
-
-    <div class="carousel_block">
-        <p class="carousel_text">1&nbsp; 2&nbsp; 3&nbsp; 4&nbsp; 5&nbsp; 6....20</p>
-    </div>
-
-    <div class="lower_part center">
-        <div class="lower_part-item">
-            <img src="img/Truck.svg" alt="Truck symbol">
-            <h3 class="lower_part-heading">
-                Free Delivery
-            </h3>
-            <p class="lower_part-text">
-                Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.
+            <!-- <img src="img/featured-6.png" alt=""> -->
+            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
+            <p class="featured-text">
+                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
+                up
+                with Moda
+                Operandi.
             </p>
-        </div>
-        <div class="lower_part-item">
-            <img src="img/Percent-sign.svg" alt="Percent symbol">
-            <h3 class="lower_part-heading">
-                Sales & discounts
-            </h3>
-            <p class="lower_part-text">
-                Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.
-            </p>
-        </div>
-        <div class="lower_part-item">
-            <img src="img/Crown.svg" alt="Crown symbol">
-            <h3 class="lower_part-heading">
-                Quality assurance
-            </h3>
-            <p class="lower_part-text">
-                Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.
+            <p class="featured-pricetag">
+                $52.00
             </p>
         </div>
     </div>
+
+
+
 
     <div class="before_footer center">
         <section class="before_footer-left">
             <img class="round_photo" src="img/round-photo.png" alt="Round photo">
-            <p class="lato-20px color_222224">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+            <p class="lato-20px color_222224">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                purus
                 condimentum“
             </p>
         </section>
@@ -349,7 +186,7 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -357,6 +194,6 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 
 </body>
