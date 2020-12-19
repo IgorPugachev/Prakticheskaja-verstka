@@ -1,5 +1,7 @@
 $colorSelect: #F16D7F;
 
+$colorDarkGrey: #A4A4A4;
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,13 @@ $colorSelect: #F16D7F;
 a {
     text-decoration: none;
 }
+
+/* made this border for practicing
+div,
+form {
+    border: 1px solid darkblue;
+}
+*/
 
 .center {
     padding-left: calc(50% - 570px);
@@ -224,7 +233,6 @@ li.size_item {
 }
 
 .featured-h2 {
-    font-family: Lato;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
@@ -232,6 +240,11 @@ li.size_item {
     margin-top: 97px;
     margin-bottom: 6px;
     text-align: center;
+}
+
+.lato-11 {
+    font-size: 11px;
+    line-height: 13px;
 }
 
 .lato-14-center {
@@ -245,6 +258,25 @@ li.size_item {
 .lato-14px {
     font-size: 14px;
     line-height: 17px;
+}
+
+.lato-16px {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.lato-16px-white {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.lato-16px-700 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .featured-content {
@@ -277,7 +309,6 @@ li.size_item {
 }
 
 .featured-text {
-    font-family: Lato;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -655,4 +686,138 @@ div a.button-style {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.purchase_block {
+    height: 998px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.purchase_left_side,
+-purchase_right_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.purchase_left_side {
+    padding-top: 96px;
+    padding-bottom: 128px;
+}
+
+.purchase_right_side {
+    padding-top: 113px;
+    padding-bottom: 342px;
+}
+
+
+.purchase_card {
+    width: 652px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+
+    img {
+        width: 262px;
+    }
+
+    .textblock {
+        width: 390px;
+        padding: 22px 97px 62px 31px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .close_button {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 28px;
+        right: 22px;
+    }
+}
+
+.shipping_form {
+    width: 360px;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 57px;
+
+    .input_text {
+        height: 45px;
+        padding-left: 17px;
+        padding-right: 17px;
+        border: 1px solid $colorDarkGrey;
+    }
+
+    button {
+        width: 101px;
+        height: 35px;
+        background-color: #fff;
+        padding: 10px 14px 15px 12px;
+        border: 1px solid $colorDarkGrey;
+        font-size: 11px;
+        color: $colorDarkGrey;
+    }
+
+}
+
+.checkout_block {
+    width: 360px;
+    height: 214px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-top: 39px;
+    padding-bottom: 42px;
+    padding-right: 35px;
+    background: #F5F3F3;
+
+}
+
+.subtotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 108px;
+    margin-bottom: 12px;
+
+}
+
+.grand_total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 170px;
+    margin-bottom: 21px;
+}
+
+.grand_total_number {
+    color: $colorSelect;
+}
+
+.grey_divider {
+    height: 2px;
+    margin-bottom: 17px;
+}
+
+.proceed {
+    width: 273px;
+    height: 50px;
+    background: $colorSelect;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px 40px;
 }
