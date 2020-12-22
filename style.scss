@@ -2,6 +2,8 @@ $colorSelect: #F16D7F;
 
 $colorDarkGrey: #A4A4A4;
 
+@import "_mixins.scss";
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +13,10 @@ $colorDarkGrey: #A4A4A4;
 
 a {
     text-decoration: none;
+}
+
+li {
+    list-style-type: none;
 }
 
 /* made this border for practicing
@@ -28,9 +34,7 @@ form {
 .header {
     background-color: #222;
     height: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include centerFlexSB;
 }
 
 .header__search {
@@ -45,9 +49,7 @@ form {
 .info_block {
     height: 148px;
     background: #F8F3F4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include centerFlexSB;
 }
 
 .promo {
@@ -101,19 +103,52 @@ details {
     padding-left: 20px;
 }
 
-summary::marker {
-    color: white;
-    display: inline-block;
+// summary::marker {
+//     color: white;
+//     display: inline-block;
+// }
+
+.sort_param {
+    position: relative;
 }
 
-summary::after {
+.sort_param_summary {
+    margin-right: 28px;
+}
+
+.sort_param_summary::after {
     content: url(img/arrow_down.svg);
     margin-left: 10px;
 }
 
+.trend_list {
+    position: absolute;
+    left: 0px;
+}
+
+.size_list {
+    position: absolute;
+    left: 160px;
+}
+
+.price_list {
+    position: absolute;
+    left: 237px;
+}
+
+.size-block {
+    position: absolute;
+    width: 79px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 12px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+
 .filter_block {
     width: 360px;
-    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -205,10 +240,7 @@ li.size_item {
     height: 100%;
     top: 0;
     left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include centerFlexColumn;
 }
 
 .font-white {
@@ -371,9 +403,7 @@ div a.button-style {
     /* В оригинале это цвет #222224 */
     height: 341px;
     margin-top: 109px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include centerFlexSB;
 }
 
 .lower_part-item {
@@ -567,6 +597,16 @@ div a.button-style {
     position: relative;
 }
 
+
+
+.filter_block:hover {
+    width: 360px;
+    height: 531px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding-right: 16px;
+}
+
 .sort_filter {
     /* flex-basis: 34%;
     flex-grow: 1; */
@@ -575,22 +615,56 @@ div a.button-style {
     padding-left: 16px;
 }
 
-.sort_items {
-    display: none;
+.filter_text:hover {
+    color: rgb(218, 57, 84);
 }
 
+.test:hover {
+    color: rgb(218, 57, 84);
+}
+
+.svg_test:hover path {
+    fill: rgb(218, 57, 84)
+}
+
+summary {
+    list-style-type: none;
+}
+
+.category,
+.brand,
+.designer {
+    display: flex;
+    align-items: center;
+}
+
+.category::before,
+.brand::before,
+.designer::before {
+    content: url(red_column.svg);
+    margin-right: 11px;
+}
+
+.category_block,
+.brand_block,
+.designer_block {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+
+
 .sort_param {
-    margin-left: calc(33.33333% + 15px);
+    margin-left: calc(33.33333% + 25px);
     display: flex;
     padding-top: 16px;
 }
 
-.sort_filter_active {
-    width: 360px;
-    background: #fff;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    padding: 16px;
-}
+// .sort_filter_active {
+//     width: 360px;
+//     background: #fff;
+//     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+//     padding: 16px;
+// }
 
 .sort_ul {
     list-style-type: none;
@@ -601,9 +675,7 @@ div a.button-style {
 .big_picture_block {
     height: 777px;
     background: #F7F7F7;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include centerFlexSB;
 }
 
 .arrow_block {
@@ -820,4 +892,17 @@ div a.button-style {
     font-size: 16px;
     line-height: 19px;
     padding: 15px 40px;
+}
+
+/*Style of Registration file */
+
+.registration_block {
+    height: 148px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.registration_left_side {
+    width: 33%;
 }

@@ -7,8 +7,8 @@
     <title>Catalogue</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -38,7 +38,55 @@
     </div>
 
     <div class="sort center">
-        <div class="sort_filter sort_filter_active">
+        
+<div class="sort_filter">
+
+    <details class="filter_block">
+    <summary class="test"> Filter <svg  class="svg_test" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" fill="black"/>
+</svg>
+    </summary>
+
+<details class="category_block">
+    <summary class="category"> CATEGORY</summary>
+    <ul>
+        <li>Accessories</li>
+        <li>Bags</li>
+        <li>Denim</li>
+        <li>Hoodies & Sweatshirts</li>
+        <li>Jackets & Coats</li>
+        <li>Polos</li>
+        <li>Shirts</li>
+        <li>Sweaters & Knits</li>
+        <li>T-Shirts</li>
+        <li>Tanks</li>
+    </ul>
+</details>                    
+
+<details class="brand_block">
+        <summary class="brand"> BRAND</summary>
+        <ul>
+            <li>Brand A</li>
+            <li>Brand B</li>
+            <li>Brand C</li>
+            <li>Brand D</li>
+            <li>Brand E</li>
+        </ul>
+</details>            
+
+<details class="designer_block">
+        <summary class="designer"> DESIGNER</summary>
+        <ul>
+            <li>Designer 1</li>
+            <li>Designer 2</li>
+            <li>Designer 3</li>
+        </ul>
+</details>   
+
+</details>
+</div>    
+
+        <!-- <div class="sort_filter sort_filter_active">
             <span class="sort_text lato-14px">FILTER <svg width="15" height="10" viewBox="0 0 15 10" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -72,76 +120,83 @@
 
                 </details>
             </div>
-        </div>
+        </div> -->
+
+
         <div class="sort_param">
-            <span>TRENDING NOW <img src="img/arrow_down.svg" alt=""></span>
-            <span>SIZE <img src="img/arrow_down.svg" alt=""></span>
-            <span>PRICE <img src="img/arrow_down.svg" alt=""></span>
+            <details class="trend_list">
+                <summary class="sort_param_summary"> TRENDING NOW </summary>
+                    <div class="trend_block"></div>
+                        <ul>
+                        <li>
+                            <label for="trend1"> Trend 1 </label>
+                            <input type="checkbox" name="trend1">
+                        </li>
+                        <li>
+                            <label for="trend2"> Trend 2 </label>
+                            <input type="checkbox" name="trend2">
+                        </li>
+                        <li>
+                            <label for="trend3"> Trend 3 </label>
+                            <input type="checkbox" name="trend3">
+                        </li>
+                        </ul>
+            </details>
+            
+            <details class="size_list">
+                <summary class="sort_param_summary"> SIZE </summary>
+                <div class="size-block">
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="size_xs">
+                            <label for="size_xs"> XS </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="size_s">
+                            <label for="size_s"> S </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="size_m">
+                            <label for="size_m"> M </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="size_l">
+                            <label for="size_l"> L </label>
+                        </li>
+                    </ul>
+                </div>
+                
+            </details>
+
+            <details class="price_list">
+                <summary class="sort_param_summary"> PRICE </summary>
+                <div>
+                    <ul>
+                    <li>
+                        <label for="price_1"> $25 </label>
+                        <input type="checkbox" name="price_1">
+                    </li>
+                    <li>
+                        <label for="price_2"> $40 </label>
+                        <input type="checkbox" name="price_2">
+                    </li>
+                    <li>
+                        <label for="price_3"> $50 </label>
+                        <input type="checkbox" name="price_3">
+                    </li>
+                    <li>
+                        <label for="price_4"> $75 </label>
+                        <input type="checkbox" name="price_4">
+                    </li>
+                    </ul>
+                </div>
+                
+            </details>     
+            
         </div>
     </div>
 
-    <!-- My unsuccessful attempt to create this part
-
-        <div class="catalog_heading center">
-        <div class="catalog_head_block">
-            <details class="details_block">
-                
-                <summary class="filter_list">FILTER</summary>
-                <div class="filter_block">
-                    <div class="category_block">
-                        <p class="category_text color_EF5B70">CATEGORY</p>
-                    </div>
-                    <ul class="filter_list_ul">
-                        <li class="filter_item">Accessories</li>
-                        <li class="filter_item">Bags</li>
-                        <li class="filter_item">Denim</li>
-                        <li class="filter_item">Hoodies & Sweatshirts</li>
-                        <li class="filter_item">Jackets & Coats</li>
-                        <li class="filter_item">Polos</li>
-                        <li class="filter_item">Shirts</li>
-                        <li class="filter_item">Shoes</li>
-                        <li class="filter_item">Sweaters & Knits</li>
-                        <li class="filter_item">T-Shirts</li>
-                        <li class="filter_item">Tanks</li>
-
-                    </ul>
-
-                    
-                    <div class="brand_block">
-                        <p class="category_text color_EF5B70">BRAND</p>
-                    </div>
-                    <div class="designer_block">
-                        <p class="category_text color_EF5B70">DESIGNER</p>
-                    </div>
-
-                </div>
-
-
-
-            </details>
-        </div>
-
-        <div class="details_block">
-            <details>
-                <summary>TRENDING NOW</summary>
-                <p class="trending_text">Some text.</p>
-            </details>
-            <details>
-                <summary>SIZE</summary>
-                <ul>
-                    <li class="size_item lato-14px">XS</li>
-                    <li class="size_item lato-14px">S</li>
-                    <li class="size_item lato-14px">M</li>
-                    <li class="size_item lato-14px">L</li>
-                </ul>
-            </details>
-            <details>
-                <summary>PRICE</summary>
-                <p class="price_text">Some $$$.</p>
-            </details>
-        </div>
-
-    </div> -->
+    
 
     <div class="featured-content center">
         <div class="featured-item">
