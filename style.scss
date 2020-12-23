@@ -136,7 +136,19 @@ details {
     left: 237px;
 }
 
-.size-block {
+.trend-block {
+    position: absolute;
+    width: 100px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 12px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+
+.size-block,
+.price-block {
     position: absolute;
     width: 79px;
     padding-top: 10px;
@@ -149,11 +161,9 @@ details {
 
 .filter_block {
     width: 360px;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
-    box-shadow: 10px 10px 10px #efefef;
+    background: #fff;
 }
 
 
@@ -182,6 +192,13 @@ details {
     border-left-color: $colorSelect;
     border-left-width: 5px;
     border-left-style: solid;
+}
+
+.ul_inside_details {
+    background: #fff;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 8px;
 }
 
 .brand_block,
@@ -277,6 +294,12 @@ li.size_item {
 .lato-11 {
     font-size: 11px;
     line-height: 13px;
+}
+
+.lato-13 {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 .lato-14-center {
@@ -453,6 +476,11 @@ div a.button-style {
     margin-bottom: 30px;
 }
 
+.round_photo:hover {
+    transform: scale(3);
+    transition-duration: 4s;
+}
+
 .lato-18px {
     font-size: 18px;
     line-height: 22px;
@@ -470,6 +498,12 @@ div a.button-style {
     font-size: 24px;
     line-height: 29px;
     text-align: center;
+}
+
+.lato-24px-300 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .color_222224 {
@@ -512,6 +546,7 @@ div a.button-style {
     height: 50px;
     background: #E1E1E1;
     padding-left: 22px;
+    padding-right: 10px;
     width: 256px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -529,7 +564,10 @@ div a.button-style {
     height: 50px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+}
 
+.subscribe_field:hover {
+    transform: translate(5px, 5px)
 }
 
 .footer {
@@ -897,7 +935,7 @@ summary {
 /*Style of Registration file */
 
 .registration_block {
-    height: 148px;
+    height: 675px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -905,4 +943,84 @@ summary {
 
 .registration_left_side {
     width: 33%;
+    max-width: 360px;
+    padding-top: 64px;
+}
+
+#first_name {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#last_name {
+    margin-bottom: 34px;
+}
+
+#first_name,
+#last_name,
+#email,
+#password {
+    width: 360px;
+    height: 45px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.login_heading {
+    margin-top: 34px;
+    margin-bottom: 20px;
+}
+
+#password {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#submit {
+    margin-top: 39px;
+    padding: 16px 66px 17px 29px;
+    color: #fff;
+    background: $colorSelect;
+}
+
+#submit:hover {
+    transform: rotate(360deg);
+    transition-duration: 4s;
+}
+
+.login_text {
+    color: #B1B1B1;
+}
+
+.registration_right_side {
+    width: 66%;
+    padding: 64px 10px 277px 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space space-between;
+    align-items: flex-start;
+}
+
+.loyalty_text {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.loyalty_li {
+    padding-bottom: 16px;
+}
+
+.loyalty_li::before {
+    content: url(img/tick.svg);
+    padding-right: 23px;
+}
+
+.featured-item img:hover {
+    transform: scale(1.5);
+    transition-duration: 2s;
+    transition-delay: 1s;
 }

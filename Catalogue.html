@@ -49,7 +49,7 @@
 
 <details class="category_block">
     <summary class="category"> CATEGORY</summary>
-    <ul>
+    <ul class="ul_inside_details">
         <li>Accessories</li>
         <li>Bags</li>
         <li>Denim</li>
@@ -65,7 +65,7 @@
 
 <details class="brand_block">
         <summary class="brand"> BRAND</summary>
-        <ul>
+        <ul  class="ul_inside_details">
             <li>Brand A</li>
             <li>Brand B</li>
             <li>Brand C</li>
@@ -76,7 +76,7 @@
 
 <details class="designer_block">
         <summary class="designer"> DESIGNER</summary>
-        <ul>
+        <ul  class="ul_inside_details">
             <li>Designer 1</li>
             <li>Designer 2</li>
             <li>Designer 3</li>
@@ -126,21 +126,23 @@
         <div class="sort_param">
             <details class="trend_list">
                 <summary class="sort_param_summary"> TRENDING NOW </summary>
-                    <div class="trend_block"></div>
+                    <div class="trend-block">
                         <ul>
                         <li>
-                            <label for="trend1"> Trend 1 </label>
                             <input type="checkbox" name="trend1">
+                            <label for="trend1"> Trend 1 </label>
                         </li>
                         <li>
-                            <label for="trend2"> Trend 2 </label>
                             <input type="checkbox" name="trend2">
+                            <label for="trend2"> Trend 2 </label>
                         </li>
                         <li>
-                            <label for="trend3"> Trend 3 </label>
                             <input type="checkbox" name="trend3">
+                            <label for="trend3"> Trend 3 </label>
                         </li>
                         </ul>
+                    </div>
+                        
             </details>
             
             <details class="size_list">
@@ -170,7 +172,7 @@
 
             <details class="price_list">
                 <summary class="sort_param_summary"> PRICE </summary>
-                <div>
+                <div class="price-block">
                     <ul>
                     <li>
                         <label for="price_1"> $25 </label>
