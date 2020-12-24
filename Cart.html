@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+    <header class="header center">
+        <div class="header__left">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <a href=""><img class="header__search" src="img/search.svg" alt="search"></a>
+        </div>
+        <div class="header__right">
+            <a href="Catalogue.html"><img src="img/menu.svg" alt="menu"></a>
+            <img class="header__account" src="img/account.svg" alt="account">
+            <img src="img/cart.svg" alt="cart">
+        </div>
+    </header>
+
+    <div class="cart_heading center">
+
+        <h2 class="lato-24px color_F16D7F">SHOPPING CART</h2>
+    </div>
+
+    <div class="purchase_block center">
+        <div class="purchase_left_side">
+            <div class="purchase_card">
+                <img src="img/featured-3.png" alt="">
+                <div class="textblock">
+                    <h2 class="heading">
+                    MANGO  PEOPLE  T-SHIRT
+                    </h2>
+                    <img class="close_button" src="img/close_button.svg" alt="">
+                    <p>Price: $300 	</p>
+                    <p>Color: Red</p>
+                    <p>Size: Xl	</p>
+                    <p>Quantity:</p>	
+                </div>
+            </div>
+            <div class="purchase_card">
+                <img src="img/men_picture1.png" alt="">
+                <div class="textblock">
+                    <h2 class="heading">
+                    MANGO  PEOPLE  T-SHIRT
+                    </h2>
+                    <img class="close_button" src="img/close_button.svg" alt="">
+                    <p>Price: $300 	</p>
+                    <p>Color: Red</p>
+                    <p>Size: Xl	</p>
+                    <p>Quantity:</p>	
+                </div>
+            </div>
+        </div>
+        <div class="purchase_right_side">
+            <form class="shipping_form" action="#"  method="POST">
+                <h3 class="lato-16px">SHIPPING ADDRESS</h3>
+                <input class="input_text" type="text" placeholder="Country" name="country">
+                <input class="input_text" type="text" placeholder="State" name="state">
+                <input class="input_text" type="number" placeholder="Postcode / ZIP" name="postcode">
+                <button type="submit">GET A QUOTE</button>
+            </form>
+            <div class="checkout_block">
+                <div class="subtotal">
+                    <p class="subtotal_text lato-11">SUB TOTAL </p>
+                    <p class="subtotal_number lato-11">$900</p>
+                </div>
+                <div class="grand_total">
+                    <p class="grand_total_text lato-16px">GRAND TOTAL</p>
+                    <p class="grand_total_number lato-16px-700">$900</p>
+                </div>
+                <div class="grey_divider">
+                    <img src="img/grey-line.svg" alt="">
+                </div>
+                <div class="proceed">
+                    PROCEED TO CHECKOUT
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="before_footer center">
+        <section class="before_footer-left">
+            <img class="round_photo" src="img/round-photo.png" alt="Round photo">
+            <p class="lato-20px color_222224">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                purus
+                condimentum“
+            </p>
+        </section>
+        <section class="before_footer-right">
+            <p class="text-center"><span class="lato-24px color_222224">SUBSCRIBE</span> <br>
+                <span class="lato-18px color_222224">FOR OUR NEWLETTER AND PROMOTION</span>
+            </p>
+            <form class="form_block" action="#">
+                <input type="email" id="subscribe" name="subscribe" placeholder="Enter your email" class="email_field">
+                <input type="submit" value="Subscribe" class="subscribe_field">
+            </form>
+        </section>
+    </div>
+
+
+    <footer class="footer center">
+        <p class="copyright font-white">
+            © 2021 Brand All Rights Reserved.
+        </p>
+        <div class="social">
+            <button class="social_button_white">
+                <a href="#"><img src="img/Facebook.svg" alt=""></a>
+            </button>
+            <button class="social_button_pink">
+                <a href="#"><img src="img/Instagram.svg" alt=""></a>
+            </button>
+            <button class="social_button_white">
+                <a href="#"><img src="img/Pinterest.svg" alt=""></a>
+            </button>
+            <button class="social_button_white">
+                <a href="#"><img src="img/Twitter.svg" alt=""></a>
+            </button>
+        </div>
+    </footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script> -->
+
+</body>
