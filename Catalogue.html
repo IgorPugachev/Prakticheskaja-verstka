@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Catalogue</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -27,61 +27,83 @@
             <img src="img/cart.svg" alt="cart">
         </div>
     </header>
-    <div class="promo">
-        <div class="promo__left">
-            <img class="promo__img" src="img/promo__img.png" alt="promo">
-        </div>
-        <div class="promo__right">
-            <div class="promo__content">
-                <h1 class="promo__heading">THE BRAND</h1>
-                <p class="promo__text">OF LUXURIOUS <span class="font-pink">FASHION</span></p>
-            </div>
-        </div>
-    </div>
-    <div class="catalog center">
-        <div class="catalog__item">
-            <img class="catalog__img" src="img/catalog.png" alt="catalog">
-            <div class="catalog__content">
-                <p class="catalog__text font-white">30% OFF</p>
-                <h3 class="catalog__heading font-pink">FOR WOMEN</h3>
-            </div>
-        </div>
-        <div class="catalog__item">
-            <img class="catalog__img" src="img/catalog_2.png" alt="catalog">
-            <div class="catalog__content">
-                <p class="catalog__text font-white">30% OFF</p>
-                <h3 class="catalog__heading font-pink">FOR WOMEN</h3>
-            </div>
-        </div>
-        <div class="catalog__item">
-            <img class="catalog__img" src="img/catalog_3.png" alt="catalog">
-            <div class="catalog__content">
-                <p class="catalog__text font-white">30% OFF</p>
-                <h3 class="catalog__heading font-pink">FOR WOMEN</h3>
-            </div>
-        </div>
-    </div>
-    <div class="catalog-big center">
-        <img class="catalog-big__img" src="img/catalog_big.png" alt="catalog big img">
-        <div class="catalog__content">
-            <p class="catalog__text font-white">LUXURIOUS & TRENDY</p>
-            <h3 class="catalog__heading font-pink">ACCESSORIES</h3>
-        </div>
+
+    <div class="breadcrumb_block center">
+        <p class="lato-24px color_F16D7F">NEW ARRIVALS</p>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item lato-14px" aria-current="page"><a href="index.html">HOME</a></li>
+                <li class="breadcrumb-item active lato-14px" aria-current="page"><a href="Catalogue.html">MAN</a></li>
+                <li class="breadcrumb-item active" aria-current="page">NEW ARRIVALS</li>
+            </ol>
+        </nav>
     </div>
 
-    <h2 class="featured-h2">
-        Featured Items
-    </h2>
-    <p class="lato-14-center">Shop for items based on what we featured in this week.</p>
+    <div class="catalog_heading">
+        <div class="catalog_head_block">
+            <details class="details_block">
+                <!-- Сделал выделение цвета красным цветом при наведении курсора, но не смог придумать, как сделать это выделение активным после клика -->
+                <summary class="filter_list">FILTER</summary>
+                <div class="filter_block">
+                    <div class="category_block">
+                        <p class="category_text color_EF5B70">CATEGORY</p>
+                    </div>
+                    <ul class="filter_list_ul">
+                        <li class="filter_item">Accessories</li>
+                        <li class="filter_item">Bags</li>
+                        <li class="filter_item">Denim</li>
+                        <li class="filter_item">Hoodies & Sweatshirts</li>
+                        <li class="filter_item">Jackets & Coats</li>
+                        <li class="filter_item">Polos</li>
+                        <li class="filter_item">Shirts</li>
+                        <li class="filter_item">Shoes</li>
+                        <li class="filter_item">Sweaters & Knits</li>
+                        <li class="filter_item">T-Shirts</li>
+                        <li class="filter_item">Tanks</li>
+
+                    </ul>
+
+                    <!-- Пока не смог понять, как сделать заливку белым цветом для всего всплывающего блока -->
+                    <div class="brand_block">
+                        <p class="category_text color_EF5B70">BRAND</p>
+                    </div>
+                    <div class="designer_block">
+                        <p class="category_text color_EF5B70">DESIGNER</p>
+                    </div>
+
+                </div>
+
+
+
+            </details>
+        </div>
+
+        <div class="details_block">
+            <details>
+                <summary>TRENDING NOW</summary>
+                <p class="trending_text">Some text.</p>
+            </details>
+            <details>
+                <summary>SIZE</summary>
+                <ul>
+                    <li class="size_item lato-14px">XS</li>
+                    <li class="size_item lato-14px">S</li>
+                    <li class="size_item lato-14px">M</li>
+                    <li class="size_item lato-14px">L</li>
+                </ul>
+            </details>
+            <details>
+                <summary>PRICE</summary>
+                <p class="price_text">Some $$$.</p>
+            </details>
+        </div>
+
+    </div>
 
     <div class="featured-content center">
         <div class="featured-item">
-            <a href="Product.html">
-                <img src="img/featured.png" alt="">
-            </a>
-            <a href="Product.html">
-                <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            </a>
+            <img src="img/featured.png" alt="">
+            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
                 up
@@ -93,10 +115,8 @@
             </p>
         </div>
         <div class="featured-item">
-            <a href="Product.html"><img src="img/featured-2.png" alt=""></a>
-            <a href="Product.html">
-                <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            </a>
+            <img src="img/men_picture1.png" alt="">
+            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
                 up
@@ -108,10 +128,8 @@
             </p>
         </div>
         <div class="featured-item">
-            <a href="Product.html"><img src="img/featured-3.png" alt=""></a>
-            <a href="Product.html">
-                <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            </a>
+            <img src="img/featured-3.png" alt="">
+            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
                 up
@@ -123,10 +141,8 @@
             </p>
         </div>
         <div class="featured-item">
-            <a href="Product.html"><img src="img/featured-4.png" alt=""></a>
-            <a href="Product.html">
-                <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            </a>
+            <img src="img/featured-4.png" alt="">
+            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
                 up
@@ -138,10 +154,8 @@
             </p>
         </div>
         <div class="featured-item">
-            <a href="Product.html"><img src="img/featured-5.png" alt=""></a>
-            <a href="Product.html">
-                <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            </a>
+            <img src="img/men_picture2.png" alt="">
+            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
                 up
@@ -153,10 +167,8 @@
             </p>
         </div>
         <div class="featured-item">
-            <a href="Product.html"><img src="img/featured-6.png" alt=""></a>
-            <a href="Product.html">
-                <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
-            </a>
+            <img src="img/men_picture3.png" alt="">
+            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
                 up
@@ -167,9 +179,50 @@
                 $52.00
             </p>
         </div>
+        <div class="featured-item">
+            <img src="img/men_picture4.png" alt="">
+            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
+            <p class="featured-text">
+                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
+                up
+                with Moda
+                Operandi.
+            </p>
+            <p class="featured-pricetag">
+                $52.00
+            </p>
+        </div>
+        <div class="featured-item">
+            <img src="img/men_picture5.png" alt="">
+            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
+            <p class="featured-text">
+                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
+                up
+                with Moda
+                Operandi.
+            </p>
+            <p class="featured-pricetag">
+                $52.00
+            </p>
+        </div>
+        <div class="featured-item">
+            <img src="img/men_picture6.png" alt="">
+            <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
+            <p class="featured-text">
+                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
+                up
+                with Moda
+                Operandi.
+            </p>
+            <p class="featured-pricetag">
+                $52.00
+            </p>
+        </div>
+
     </div>
-    <div>
-        <a href="#" class="button-style">Browse All Products</a>
+
+    <div class="carousel_block">
+        <p class="carousel_text">1&nbsp; 2&nbsp; 3&nbsp; 4&nbsp; 5&nbsp; 6....20</p>
     </div>
 
     <div class="lower_part center">
@@ -202,7 +255,7 @@
         </div>
     </div>
 
-    <div class="before_footer">
+    <div class="before_footer center">
         <section class="before_footer-left">
             <img class="round_photo" src="img/round-photo.png" alt="Round photo">
             <p class="lato-20px color_222224">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
@@ -211,13 +264,15 @@
         </section>
         <div class="before_footer-right">
             <p class="text-center"><span class="lato-24px color_222224">SUBSCRIBE</span> <br>
-                <span class="lato-18px color_222224">FOR OUR NEWLETTER AND PROMOTION</span></p>
+                <span class="lato-18px color_222224">FOR OUR NEWLETTER AND PROMOTION</span>
+            </p>
             <form class="form_block" action="#">
                 <input type="email" id="subscribe" name="subscribe" placeholder="Enter your email" class="email_field">
                 <input type="submit" value="Subscribe" class="subscribe_field">
             </form>
         </div>
     </div>
+
 
     <footer class="footer">
         <p class="copyright font-white">
@@ -250,5 +305,3 @@
         crossorigin="anonymous"></script>
 
 </body>
-
-</html>
