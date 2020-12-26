@@ -53,27 +53,52 @@ form {
 }
 
 .promo {
-    background: rgba(113, 103, 105, 0.08);
+    width: 100%;
+    height: auto;
+    // background: rgba(113, 103, 105, 0.08);
     padding-left: calc(50% - 800px);
     padding-right: calc(50% - 800px);
     display: flex;
 }
 
-.promo__left {
-    width: 50%;
+.promo:hover {
+    filter: brightness(50%);
 }
 
-.promo__img {
+.promo_left {
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo_img {
     width: 100%;
 }
 
-.promo__right {
+.promo_right {
+    max-height: 765px;
     width: 50%;
     background: #F1E4E6;
     display: flex;
     align-items: center;
     padding-left: 64px;
 }
+
+.promo_right_block {
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-between;
+}
+
+.promo__content {
+    margin-left: 16px;
+
+}
+
+
+@media (min-width:768px) and (max-width: 1139px) {}
 
 .catalog_heading {
     padding-top: 51px;
@@ -243,11 +268,11 @@ li.size_item {
     padding-top: 64px;
 }
 
-.catalog__item {
+.catalog_item {
     position: relative;
 }
 
-.catalog__item:not(:last-child) {
+.catalog_item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -334,6 +359,18 @@ li.size_item {
     line-height: 19px;
 }
 
+.lato-32px-700 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.4px;
+}
+
+.lato-48px-900 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+
 .featured-content {
     margin-top: 48px;
     margin-bottom: 63px;
@@ -351,6 +388,11 @@ li.size_item {
     align-items: flex-start;
     background: #F8F8F8;
     margin-bottom: 30px;
+    position: relative;
+}
+
+.featured-item:hover {
+    filter: brightness(50%);
 }
 
 .featured-heading {
@@ -445,6 +487,7 @@ div a.button-style {
 }
 
 .lower_part-text {
+    min-width: 348px;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -464,13 +507,6 @@ div a.button-style {
 
 }
 
-.before_footer-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 87px;
-    width: 360px;
-}
 
 .round_photo {
     margin-bottom: 30px;
@@ -527,6 +563,7 @@ div a.button-style {
     text-align: center;
 }
 
+.before_footer-left,
 .before_footer-right {
     display: flex;
     flex-direction: column;
@@ -535,6 +572,30 @@ div a.button-style {
     width: 352px;
     height: 137px;
 }
+
+@media (max-width: 768px) {
+    .before_footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: auto;
+        padding-top: 45px;
+    }
+
+    .before_footer-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 360px;
+    }
+
+    .before_footer-right {
+        margin-top: 60px;
+    }
+
+
+}
+
 
 .form_block {
     margin-top: 32px;
@@ -1026,8 +1087,87 @@ summary {
     padding-right: 23px;
 }
 
-.featured-item img:hover {
-    transform: scale(1.5);
-    transition-duration: 2s;
-    transition-delay: 1s;
+// .featured-item img:hover {
+//     transform: scale(1.5);
+//     transition-duration: 2s;
+//     transition-delay: 1s;
+// }
+
+/* Experiments with adaptive design */
+
+@media (max-width: 768px) {
+    .catalog-big {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .featured-content {
+        // margin-left: 16px;
+        // margin-right: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+}
+
+@media (max-width: 769px) {
+    .catalog {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .catalog {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .catalog_item:not(:last-child) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .catalog_item {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width:768px) {
+    .catalog-big {
+        min-height: 111px;
+    }
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1139px) {
+    .featured-content {
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1139px) {
+    .lower_part {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 64px;
+        height: auto;
+    }
+
+    .lower_part-item {
+        margin-top: 48px;
+    }
 }
