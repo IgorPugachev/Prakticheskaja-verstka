@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
+    <script src="https://kit.fontawesome.com/cba13b1f97.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -22,7 +24,71 @@
             <a href="#"><img class="header__search" src="img/search.svg" alt="search"></a>
         </div>
         <div class="header__right">
-            <a href="Catalogue.html"><img src="img/menu.svg" alt="menu"></a>
+            <input id="switch" type="checkbox">
+            <label for="switch"><img src="img/menu.svg" alt="menu"></label>  
+            <nav class="dropdown">
+                <span class="drop_name">MENU</span>
+                <div class="drop_box">
+                    <a href="Catalogue.html" class="drop_heading">MAN</a>
+                    <ul class="drop_ul">
+                        <li>
+                           <a href="#" class="drop_link"> Accessories</a> 
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Bags</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Denim</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> T-Shirts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="drop_box">
+                    <a href="Catalogue.html" class="drop_heading">WOMAN</a>
+                    <ul class="drop_ul">
+                        <li>
+                           <a href="#" class="drop_link"> Accessories</a> 
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Jackets & Coats</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Polos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> T-Shirts</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Shirts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="drop_box">
+                    <a href="Catalogue.html" class="drop_heading">KIDS</a>
+                    <ul class="drop_ul">
+                        <li>
+                           <a href="#" class="drop_link"> Accessories</a> 
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Jackets & Coats</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Polos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> T-Shirts</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Shirts</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Shirts</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <img class="header__account" src="img/account.svg" alt="account">
             <a href="Cart.html"><img src="img/cart.svg" alt="cart"></a>
         </div>
@@ -39,52 +105,52 @@
 
     <div class="sort center">
         
-<div class="sort_filter">
+        <div class="sort_filter">
 
-    <details class="filter_block">
-    <summary class="test"> Filter <svg  class="svg_test" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" fill="black"/>
-</svg>
-    </summary>
+            <details class="filter_block">
+            <summary class="test"> Filter <svg  class="svg_test" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" fill="black"/>
+        </svg>
+            </summary>
 
-<details class="category_block">
-    <summary class="category"> CATEGORY</summary>
-    <ul class="ul_inside_details">
-        <li>Accessories</li>
-        <li>Bags</li>
-        <li>Denim</li>
-        <li>Hoodies & Sweatshirts</li>
-        <li>Jackets & Coats</li>
-        <li>Polos</li>
-        <li>Shirts</li>
-        <li>Sweaters & Knits</li>
-        <li>T-Shirts</li>
-        <li>Tanks</li>
-    </ul>
-</details>                    
+        <details class="category_block">
+            <summary class="category"> CATEGORY</summary>
+            <ul class="ul_inside_details">
+                <li>Accessories</li>
+                <li>Bags</li>
+                <li>Denim</li>
+                <li>Hoodies & Sweatshirts</li>
+                <li>Jackets & Coats</li>
+                <li>Polos</li>
+                <li>Shirts</li>
+                <li>Sweaters & Knits</li>
+                <li>T-Shirts</li>
+                <li>Tanks</li>
+            </ul>
+        </details>                    
 
-<details class="brand_block">
-        <summary class="brand"> BRAND</summary>
-        <ul  class="ul_inside_details">
-            <li>Brand A</li>
-            <li>Brand B</li>
-            <li>Brand C</li>
-            <li>Brand D</li>
-            <li>Brand E</li>
-        </ul>
-</details>            
+        <details class="brand_block">
+                <summary class="brand"> BRAND</summary>
+                <ul  class="ul_inside_details">
+                    <li>Brand A</li>
+                    <li>Brand B</li>
+                    <li>Brand C</li>
+                    <li>Brand D</li>
+                    <li>Brand E</li>
+                </ul>
+        </details>            
 
-<details class="designer_block">
-        <summary class="designer"> DESIGNER</summary>
-        <ul  class="ul_inside_details">
-            <li>Designer 1</li>
-            <li>Designer 2</li>
-            <li>Designer 3</li>
-        </ul>
-</details>   
+        <details class="designer_block">
+                <summary class="designer"> DESIGNER</summary>
+                <ul  class="ul_inside_details">
+                    <li>Designer 1</li>
+                    <li>Designer 2</li>
+                    <li>Designer 3</li>
+                </ul>
+        </details>   
 
-</details>
-</div>    
+            </details>
+        </div>    
 
         <div class="sort_param">
             <details class="trend_list">
@@ -159,13 +225,20 @@
             </details>     
             
         </div>
+
+        <div class="block3"></div>
     </div>
 
     
 
     <div class="featured-content center">
         <div class="featured-item">
-            <img src="img/featured.png" alt="">
+            <a href="product.html">
+                <img class="product_img" src="img/featured.png" alt="product image">
+            </a>
+            <a href="#" class="product_add">
+                <img src="img/product-cart.svg" alt="cart"> Add to Cart
+            </a>
             <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
@@ -178,7 +251,12 @@
             </p>
         </div>
         <div class="featured-item">
-            <img src="img/men_picture1.png" alt="">
+            <a href="product.html">
+                <img class="product_img" src="img/men_picture1.png" alt="product image">
+            </a>
+            <a href="#" class="product_add">
+                <img src="img/product-cart.svg" alt="cart"> Add to Cart
+            </a>
             <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
@@ -191,7 +269,12 @@
             </p>
         </div>
         <div class="featured-item">
-            <img src="img/featured-3.png" alt="">
+            <a href="product.html">
+                <img class="product_img" src="img/featured-3.png" alt="product image">
+            </a>
+            <a href="#" class="product_add">
+                <img src="img/product-cart.svg" alt="cart"> Add to Cart
+            </a>
             <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
@@ -204,7 +287,12 @@
             </p>
         </div>
         <div class="featured-item">
-            <img src="img/featured-4.png" alt="">
+            <a href="product.html">
+                <img class="product_img" src="img/featured-4.png" alt="product image">
+            </a>
+            <a href="#" class="product_add">
+                <img src="img/product-cart.svg" alt="cart"> Add to Cart
+            </a>
             <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
@@ -217,7 +305,12 @@
             </p>
         </div>
         <div class="featured-item">
-            <img src="img/men_picture2.png" alt="">
+            <a href="product.html">
+                <img class="product_img" src="img/men_picture2.png" alt="product image">
+            </a>
+            <a href="#" class="product_add">
+                <img src="img/product-cart.svg" alt="cart"> Add to Cart
+            </a>
             <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
@@ -230,7 +323,12 @@
             </p>
         </div>
         <div class="featured-item">
-            <img src="img/men_picture3.png" alt="">
+            <a href="product.html">
+                <img class="product_img" src="img/men_picture3.png" alt="product image">
+            </a>
+            <a href="#" class="product_add">
+                <img src="img/product-cart.svg" alt="cart"> Add to Cart
+            </a>
             <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
@@ -243,7 +341,12 @@
             </p>
         </div>
         <div class="featured-item">
-            <img src="img/men_picture4.png" alt="">
+            <a href="product.html">
+                <img class="product_img" src="img/men_picture4.png" alt="product image">
+            </a>
+            <a href="#" class="product_add">
+                <img src="img/product-cart.svg" alt="cart"> Add to Cart
+            </a>
             <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
@@ -256,7 +359,12 @@
             </p>
         </div>
         <div class="featured-item">
-            <img src="img/men_picture5.png" alt="">
+            <a href="product.html">
+                <img class="product_img" src="img/men_picture5.png" alt="product image">
+            </a>
+            <a href="#" class="product_add">
+                <img src="img/product-cart.svg" alt="cart"> Add to Cart
+            </a>
             <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
@@ -269,7 +377,12 @@
             </p>
         </div>
         <div class="featured-item">
-            <img src="img/men_picture6.png" alt="">
+            <a href="product.html">
+                <img class="product_img" src="img/men_picture6.png" alt="product image">
+            </a>
+            <a href="#" class="product_add">
+                <img src="img/product-cart.svg" alt="cart"> Add to Cart
+            </a>
             <h3 class="featured-heading">ELLERY X M'O CAPSULE</h3>
             <p class="featured-text">
                 Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
@@ -342,6 +455,9 @@
             © 2021 Brand All Rights Reserved.
         </p>
         <div class="social">
+            <!-- <a class="social_button_white" href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a> -->
             <button class="social_button_white">
                 <a href="#"><img src="img/Facebook.svg" alt=""></a>
             </button>

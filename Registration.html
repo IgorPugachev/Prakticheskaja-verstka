@@ -22,7 +22,71 @@
             <a href=""><img class="header__search" src="img/search.svg" alt="search"></a>
         </div>
         <div class="header__right">
-            <a href="Catalogue.html"><img src="img/menu.svg" alt="menu"></a>
+            <input id="switch" type="checkbox">
+            <label for="switch"><img src="img/menu.svg" alt="menu"></label>  
+            <nav class="dropdown">
+                <span class="drop_name">MENU</span>
+                <div class="drop_box">
+                    <a href="Catalogue.html" class="drop_heading">MAN</a>
+                    <ul class="drop_ul">
+                        <li>
+                           <a href="#" class="drop_link"> Accessories</a> 
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Bags</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Denim</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> T-Shirts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="drop_box">
+                    <a href="Catalogue.html" class="drop_heading">WOMAN</a>
+                    <ul class="drop_ul">
+                        <li>
+                           <a href="#" class="drop_link"> Accessories</a> 
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Jackets & Coats</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Polos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> T-Shirts</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Shirts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="drop_box">
+                    <a href="Catalogue.html" class="drop_heading">KIDS</a>
+                    <ul class="drop_ul">
+                        <li>
+                           <a href="#" class="drop_link"> Accessories</a> 
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Jackets & Coats</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Polos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> T-Shirts</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Shirts</a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop_link"> Shirts</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <img class="header__account" src="img/account.svg" alt="account">
             <a href="Cart.html"><img src="img/cart.svg" alt="cart"></a>
         </div>
@@ -39,24 +103,20 @@
                 <p class="lato-16px"> Your Name</p>
                 <input type="text" id="first_name" name="first_name" placeholder="First Name" required> <br>
                 <input type="text" id="last_name" name="last_name" placeholder="Last Name" required> <br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>        
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>        
         
-        <p class="login_heading lato-16px"> Login details</p>
-            <input type="email" id="email" name="email" placeholder="Email" required> <br>
-            <input type="password" id="password" name="password" placeholder="password" required> <br>
-        <p class="login_text lato-13"> Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                <p class="login_heading lato-16px"> Login details</p>
+                <input type="email" id="email" name="email" placeholder="Email" required> <br>
+                <input type="password" id="password" name="password" placeholder="password" required> <br>
+                <p class="login_text lato-13"> Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
         
         <button  class="submit_button"> JOIN NOW</button>
         
         
             </form>
-
-
-
-
 
         </div>
         <div class="registration_right_side">
@@ -71,8 +131,6 @@
             </ul>
         </div>
     </div>
-
-
 
     <div class="before_footer center">
         <section class="before_footer-left">
@@ -92,7 +150,6 @@
             </form>
         </section>
     </div>
-
 
     <footer class="footer center">
         <p class="copyright font-white">
@@ -114,14 +171,5 @@
         </div>
     </footer>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script> -->
-
+    
 </body>
